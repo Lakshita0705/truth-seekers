@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: bit.ly/4i6w1Sf
+**URL**: http://10.66.13.131:8080/
 
 
 ## What technologies are used for this project?
