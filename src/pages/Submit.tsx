@@ -168,18 +168,9 @@ const Submit = () => {
                   : "border-green-500 hover:bg-green-500/10"}`}
                 onClick={() => handleAssessmentChange("true")}
               >
-                Likely True
+                Real
               </Button>
-              <Button
-                type="button"
-                variant="outline"
-                className={`flex-1 ${formData.assessment === "uncertain" 
-                  ? "bg-yellow-500/10 border-yellow-500" 
-                  : "border-yellow-500 hover:bg-yellow-500/10"}`}
-                onClick={() => handleAssessmentChange("uncertain")}
-              >
-                Uncertain
-              </Button>
+              
               <Button
                 type="button"
                 variant="outline"
@@ -188,7 +179,7 @@ const Submit = () => {
                   : "border-red-500 hover:bg-red-500/10"}`}
                 onClick={() => handleAssessmentChange("false")}
               >
-                Likely False
+                Fake
               </Button>
             </div>
           </div>
