@@ -13,6 +13,11 @@ import Signup from "./pages/Signup";
 import Dashboard from "./pages/Dashboard";
 import ClaimsPage from "./pages/ClaimsPage";
 import NotFound from "./pages/NotFound";
+import Profile from "./pages/Profile";
+import Submit from "./pages/Submit";
+import Notifications from "./pages/Notifications";
+import Leaderboard from "./pages/Leaderboard";
+import ClaimDetails from "./pages/ClaimDetails";
 
 const queryClient = new QueryClient();
 
@@ -44,6 +49,31 @@ const AppRoutes = () => {
       <Route path="/claims" element={
         <ProtectedRoute>
           <ClaimsPage />
+        </ProtectedRoute>
+      } />
+      <Route path="/claims/:claimId" element={
+        <ProtectedRoute>
+          <ClaimDetails />
+        </ProtectedRoute>
+      } />
+      <Route path="/submit" element={
+        <ProtectedRoute>
+          <Submit />
+        </ProtectedRoute>
+      } />
+      <Route path="/profile" element={
+        <ProtectedRoute>
+          <Profile />
+        </ProtectedRoute>
+      } />
+      <Route path="/notifications" element={
+        <ProtectedRoute>
+          <Notifications />
+        </ProtectedRoute>
+      } />
+      <Route path="/leaderboard" element={
+        <ProtectedRoute>
+          <Leaderboard />
         </ProtectedRoute>
       } />
       
